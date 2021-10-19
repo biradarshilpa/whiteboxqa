@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="White Box qa Test Suite">
+    <listeners>
+        <listener class-name="com.wbl.qa.ExtentReportListener.ExtentReporterNG"></listener>
+    </listeners>
+
+
+    <test name= "White Box Learning App TestCases">
+        <classes>
+              <class name="com.wbl.qa.tests.HomePageTests">
+                   <methods>
+                       <include name="verifyTitleTest"/>
+                       <include name="verifyLogoTest"/>
+                       <include name="verifyLoginTest"/>
+                   </methods>
+            </class>
+            <class name="com.wbl.qa.tests.LoginPageTests">
+              <methods>
+                    <include name="verifyLoginTitleTest"/>
+                    <include name="verifyLoginLogoTest"/>
+                    <include name="verifyLoginButtonTest"/>
+                    <include name="verifyRegisterButtonTest"/>
+                    <include name="verifyLoginDetailsTest"/>
+                </methods>
+            </class>
+            <class name="com.wbl.qa.tests.RegisterPageTests">
+                <methods>
+                       <include name="verifyRegistrationLogo"/>
+                       <include name="verifyRegisterDetailsTest"/>
+                   </methods>
+               </class>
+          </classes>
+       </test>
+   </suite>
